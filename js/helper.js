@@ -66,7 +66,7 @@ $(document).ready(function() {
   $('button').click(function() {
     var name = $('#name')[0].innerHTML;
     var iName = inName(name) || function(){};
-    $('#name').html(iName);  
+    $('#name').html(iName);
   });
 });
 
@@ -86,7 +86,7 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+  logClicks(loc.pageX, loc.pageY);
 });
 
 
